@@ -4,7 +4,7 @@ import { TbSun } from "react-icons/tb";
 
 function Navbar({ darkMode, setDarkMode }) {
   return (
-    <nav className="w-[90%] py-4">
+    <nav className="w-[90%] py-2">
       <div className="w-full relative">
         <span
           onClick={() => setDarkMode(!darkMode)}
