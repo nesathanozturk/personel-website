@@ -3,7 +3,7 @@ import { AiFillLinkedin, AiFillGithub, AiFillInstagram } from "react-icons/ai";
 
 function About() {
   return (
-    <section className="min-h-screen flex flex-col justify-center items-center py-10 text-center md:flex-row">
+    <section className="min-h-screen flex flex-col justify-center items-center text-center md:flex-row">
       <div>
         <h1 className="text-2xl text-black font-bold leading-10 dark:text-white md:text-5xl md:leading-normal">
           <span className="text-5xl text-blue-600 dark:text-red-600 md:text-6xl">
