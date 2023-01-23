@@ -1,12 +1,7 @@
 import React from "react";
+import { AiFillLinkedin, AiFillGithub, AiFillInstagram } from "react-icons/ai";
 
-const About = () => {
-  const social_media = [
-    "logo-instagram",
-    "logo-facebook",
-    "logo-linkedin",
-    "logo-twitter",
-  ];
+function About() {
   return (
     <section
       id="home"
@@ -30,20 +25,15 @@ const About = () => {
           <button className="btn-primary mt-8">
             <a href="mailto:nesathanozturk061@gmail.com">Contact Me</a>
           </button>
-          <div className="mt-8 text-3xl flex items-center md:justify-start justify-center gap-5">
-            {social_media?.map((icon) => (
-              <div
-                key={icon}
-                className="text-gray-600 hover:text-white cursor-pointer "
-              >
-                <ion-icon name={icon}></ion-icon>
-              </div>
-            ))}
+          <div className="mt-8 text-5xl flex items-center md:justify-start justify-center gap-5 cursor-pointer">
+            <AiFillLinkedin />
+            <AiFillGithub />
+            <AiFillInstagram />
           </div>
         </div>
       </div>
     </section>
   );
-};
+}
 
 export default About;
