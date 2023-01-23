@@ -2,7 +2,7 @@ import React from "react";
 import { MdDarkMode } from "react-icons/md";
 import { BiSun } from "react-icons/bi";
 
-function Navbar() {
+function Navbar({ darkMode, setDarkMode }) {
   return (
     <nav className="w-full relative">
       <span
