@@ -1,20 +1,18 @@
 import React from "react";
 import { MdDarkMode } from "react-icons/md";
-import { BiSun } from "react-icons/bi";
+import { TbSun } from "react-icons/tb";
 
 function Navbar({ darkMode, setDarkMode }) {
   return (
-    <nav className="w-full relative">
-      <span
-        onClick={() => setDarkMode(!darkMode)}
-        className="absolute top-10 right-10 text-3xl cursor-pointer max-sm:text-2xl"
-      >
-        {darkMode ? (
-          <BiSun className="text-white" />
-        ) : (
-          <MdDarkMode className="text-black" />
-        )}
-      </span>
+    <nav className="w-[90%] py-4">
+      <div className="w-full relative">
+        <span
+          onClick={() => setDarkMode(!darkMode)}
+          className="absolute top-10 right-0 text-3xl cursor-pointer max-sm:text-2xl"
+        >
+          {darkMode ? <TbSun className="text-white" /> : <MdDarkMode />}
+        </span>
+      </div>
     </nav>
   );
 }
