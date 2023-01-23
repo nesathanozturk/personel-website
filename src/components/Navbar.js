@@ -7,9 +7,13 @@ function Navbar({ darkMode, setDarkMode }) {
     <nav className="w-full relative">
       <span
         onClick={() => setDarkMode(!darkMode)}
-        className="absolute top-5 right-5 text-3xl cursor-pointer max-sm:text-2xl"
+        className="absolute top-10 right-10 text-3xl cursor-pointer max-sm:text-2xl"
       >
-        {darkMode ? <BiSun /> : <MdDarkMode className="text-black" />}
+        {darkMode ? (
+          <BiSun className="text-white" />
+        ) : (
+          <MdDarkMode className="text-black" />
+        )}
       </span>
     </nav>
   );
