@@ -5,7 +5,10 @@
 @tailwind components;
 @tailwind utilities;
 @layer components {
-  .aboutImg::after {
-    @apply content-[''] w-full left-0 top-0 rounded-xl rotate-12 h-full absolute bg-gray-600 -z-10;
+  .dark-text {
+    @apply dark:text-white dark:hover:text-gray-300;
+  }
+  .p-text {
+    @apply text-black text-lg font-bold leading-5;
   }
 }
