@@ -5,7 +5,7 @@ import Footer from "./components/Footer";
 
 function App() {
   return (
-    <div className="box-border bg-gray-900 text-gray-100 font-Poppins scroll-smooth">
+    <div className="box-border bg-white dark:bg-gray-900 scroll-smooth font-poppins">
       <Navbar />
       <About />
       <Footer />
